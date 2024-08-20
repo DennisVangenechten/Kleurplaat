@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kleurplaat</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="main.js" defer></script>
+</head>
+<body>
+  <div class="controls">
+    <label for="colorPicker">Kies een kleur:</label>
+    <input type="color" id="colorPicker" value="#ffffff">
+    <button type="button" id="resetButton">Nieuw Blad</button>
+    <button type="button" id="exportButton">Exporteer naar JSON</button>
+    <input type="file" id="importFile">
+    <label for="importFile" id="importFileLabel">Importeer van JSON</label>
+  </div>
+  <div id="grid-container">
+    <div id="grid" class="grid"></div>
+  </div>
+</body>
+</html>
